@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirigiendo a WhatsApp</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e9ecef;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .message {
+            background-color: #25D366; /* Color de WhatsApp */
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        setTimeout(function () {
+            window.location.href = "https://api.whatsapp.com/send?phone=5493518614268&text=quiero%20jugar%20con%20mi%20bono%20del%2030%25";
+        }, 2000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="message">Redireccionando a WhatsApp...</div>
+        <p>Por favor, espera un momento mientras te conectamos.</p>
+    </div>
+</body>
+</html>
